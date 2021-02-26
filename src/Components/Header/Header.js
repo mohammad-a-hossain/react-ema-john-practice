@@ -10,7 +10,7 @@ import header from './header.css'
             <nav>
                <a href='/shop'> Shop </a>
                <a href='/manage'> Manage  </a>
-               <a href='/review'> Review  </a>
+               <a href='/review'>Order-Review  </a>
             </nav>
         </div>
     )

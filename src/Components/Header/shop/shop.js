@@ -21,11 +21,6 @@ import './shop.css'
                     products.map(prod =><Product product={prod}></Product> )
                }
                 
-         
-          
-            
-            
-           
             </div>
             <div className='lower'>
                 
