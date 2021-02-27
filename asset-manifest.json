@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/.github.io/react-ema-john-practice/static/css/main.3bfcbdd1.chunk.css",
+    "main.js": "/.github.io/react-ema-john-practice/static/js/main.71383527.chunk.js",
+    "main.js.map": "/.github.io/react-ema-john-practice/static/js/main.71383527.chunk.js.map",
+    "runtime-main.js": "/.github.io/react-ema-john-practice/static/js/runtime-main.feafe1a6.js",
+    "runtime-main.js.map": "/.github.io/react-ema-john-practice/static/js/runtime-main.feafe1a6.js.map",
+    "static/js/2.e570972f.chunk.js": "/.github.io/react-ema-john-practice/static/js/2.e570972f.chunk.js",
+    "static/js/2.e570972f.chunk.js.map": "/.github.io/react-ema-john-practice/static/js/2.e570972f.chunk.js.map",
+    "static/js/3.978203a7.chunk.js": "/.github.io/react-ema-john-practice/static/js/3.978203a7.chunk.js",
+    "static/js/3.978203a7.chunk.js.map": "/.github.io/react-ema-john-practice/static/js/3.978203a7.chunk.js.map",
+    "index.html": "/.github.io/react-ema-john-practice/index.html",
+    "static/css/main.3bfcbdd1.chunk.css.map": "/.github.io/react-ema-john-practice/static/css/main.3bfcbdd1.chunk.css.map",
+    "static/js/2.e570972f.chunk.js.LICENSE.txt": "/.github.io/react-ema-john-practice/static/js/2.e570972f.chunk.js.LICENSE.txt",
+    "static/media/logo.0dd9a510.png": "/.github.io/react-ema-john-practice/static/media/logo.0dd9a510.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.feafe1a6.js",
+    "static/js/2.e570972f.chunk.js",
+    "static/css/main.3bfcbdd1.chunk.css",
+    "static/js/main.71383527.chunk.js"
+  ]
+}
