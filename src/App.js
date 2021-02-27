@@ -9,9 +9,6 @@ function App() {
     <div>
     <Header/>
     <Shop>
-     {/*  <Product>
-
-      </Product> */}
     </Shop>
     </div>
   );
