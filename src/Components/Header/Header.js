@@ -1,4 +1,34 @@
-import React from 'react'
+ import React from 'react'
+ import './header.css'
+ import logo from '../../images/logo.png'
+ 
+ const Header = () => {
+     return (
+         <div className='header'>
+             <img src={logo} alt=""/>
+             <nav>
+                <a>Home</a>
+                <a>Order</a>
+                <a>Review</a>
+                <a>Details</a>
+                <a>Comment</a>
+
+             </nav>
+             <input type="text" placeholder="search your item"/>
+         </div>
+     )
+ }
+ export default Header
+
+
+
+
+
+
+
+
+
+/* import React from 'react'
 import logo from '../../images/logo.png';
 import header from './header.css'
 
@@ -15,4 +45,4 @@ import header from './header.css'
         </div>
     )
 }
-export default Header
+export default Header */

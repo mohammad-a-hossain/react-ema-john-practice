@@ -1,4 +1,19 @@
-.shop-container{
+.container{
+    display: flex;
+    border: 1px solid;
+}
+.shop-body{
+    width: 80%;
+    background-color: cornsilk;
+    padding: 10px;
+}
+.cart-body{
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(202, 193, 193);
+}
+.cart-body p{text-align: center; margin: 5px; font-size: 18px;}
+/* .shop-container{
  display: flex;
 }
 .upper{
@@ -10,4 +25,4 @@
     width: 20%;
     height: auto;
     text-align: center;
-}
+} */

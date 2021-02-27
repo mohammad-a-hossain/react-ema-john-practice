@@ -1,4 +1,26 @@
+.header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(210, 236, 161);
+    text-align: center;
+}
 .header img{
+    height: 80px;
+
+}
+nav{background-color: black;padding: 5px;}
+nav a{
+    font-size: 20px;
+    margin: 0px 10px;
+    color:white;
+}
+a:hover{background-color: mistyrose;color:black}
+.header input{width: 80%;padding: 10px;text-align: center;margin: 0 auto;background-color: blanchedalmond;
+ font-size: 18px;
+}
+
+
+/* .header img{
     height: 80px;
 }
 .header{
@@ -15,4 +37,4 @@ nav a{
     padding: 5px;
      color: white;
 }
-nav a:hover{background-color: white;color:black}
+nav a:hover{background-color: white;color:black} */
