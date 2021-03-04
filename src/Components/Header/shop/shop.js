@@ -3,6 +3,7 @@ import './shop.css'
 import fakeData from '../../../fakeData'
 import {useState} from 'react'
 import Product from '../Product/Product'
+import { addToDatabaseCart } from '../../../utilities/databaseManager'
 
 export const Shop = () => {
     
@@ -18,6 +19,9 @@ export const Shop = () => {
     //console.log('added', product)
     const newCart =[...cart, product]
     setCart(newCart)
+    const sameProduct = newCart.filter(p => p.key === product.key)
+    const count = sameProduct.length
+    addToDatabaseCart(product.key,count)
 }
 
     const total= cart.reduce((total,pro)=>total + pro.price,0)
@@ -42,6 +46,7 @@ export const Shop = () => {
               products.map(pdo => 
                 
               <Product product={pdo}
+              key={pdo.key}
               handleAddProduct ={handleAddProduct}
               showAddToCart={true}
              />
@@ -56,8 +61,9 @@ export const Shop = () => {
                  <p>tax and Vat: {tax}</p>
                  <p>shipping: {shipping}</p>
                  <p><u>grand total: {grandTotal}</u> </p>
+                 <button className="btnAdd">Review product</button>
             </div>
-            
+          
         </div>
     )
 }

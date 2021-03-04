@@ -12,6 +12,7 @@
                 <a href='/review'>Review</a>
                 <a href='/details'>Details</a>
                 <a href='/comments'>Comment</a>
+                <a href='/inventory'>Inventory</a>
 
              </nav>
              <input type="text" placeholder="search your item"/>
