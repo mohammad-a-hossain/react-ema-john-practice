@@ -9,7 +9,7 @@ const ProductDetail = () => {
     console.log(productItem)
     return (
         <div>
-            <h1>{productKey}product detail  page comming soon</h1>
+            <h1>product detail  page </h1>
            <Product product={productItem} showAddToCart={false}>  </Product>
         </div>
     )
