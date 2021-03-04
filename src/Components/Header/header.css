@@ -13,6 +13,8 @@ nav a{
     font-size: 20px;
     margin: 0px 10px;
     color:white;
+    cursor: pointer;
+    text-decoration: none;
 }
 a:hover{background-color: mistyrose;color:black}
 .header input{width: 80%;padding: 10px;text-align: center;margin: 0 auto;background-color: blanchedalmond;

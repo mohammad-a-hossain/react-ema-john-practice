@@ -40,8 +40,10 @@ export const Shop = () => {
          
           {
               products.map(pdo => 
+                
               <Product product={pdo}
               handleAddProduct ={handleAddProduct}
+              showAddToCart={true}
              />
             )
           }

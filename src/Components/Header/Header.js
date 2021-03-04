@@ -8,10 +8,10 @@
              <img src={logo} alt=""/>
              <nav>
                 <a>Home</a>
-                <a>Order</a>
-                <a>Review</a>
-                <a>Details</a>
-                <a>Comment</a>
+                <a href='/shop'>Shop</a>
+                <a href='/review'>Review</a>
+                <a href='/details'>Details</a>
+                <a href='/comments'>Comment</a>
 
              </nav>
              <input type="text" placeholder="search your item"/>
