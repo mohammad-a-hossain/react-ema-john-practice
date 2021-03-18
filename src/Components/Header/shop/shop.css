@@ -1,16 +1,18 @@
 .container{
+   
     display: flex;
-    border: 1px solid;
+    border: 1px solid black;
 }
 .shop-body{
     width: 80%;
-    background-color: cornsilk;
-    padding: 10px;
+    background-color: rgb(228, 228, 217);
+    padding: 20px;
+    margin:0 auto;
 }
 .cart-body{
     width: 20%;
     padding: 10px;
-    background-color: rgb(202, 193, 193);
+    background-color: rgb(228, 64, 64);
 }
 .cart-body p{text-align: center; margin: 5px; font-size: 18px;}
 /* .shop-container{

@@ -11,7 +11,7 @@ export const Shop = () => {
     
     //onsole.log(fakeData)
     const data10 = fakeData.slice(0,15)
-   //console.log(data10)
+   console.log(data10)
    const [products,setProduct]= useState(data10)
    const [cart,setCart] = useState([])
      //console.log(cart)
@@ -22,7 +22,7 @@ export const Shop = () => {
         if(products.length > 0){
             const previousCart = productKeys.map( existingKey => {
                 const product = fakeData.find( pd => pd.key === existingKey);
-                console.log(product.quantity)
+               // console.log(product.quantity)
                 product.quantity = savedCart[existingKey];
                 return product;
             } )

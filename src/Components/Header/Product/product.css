@@ -2,7 +2,7 @@
     display: flex;
     border: 1px solid rgb(92, 85, 85);
     border-bottom: 5px;
-    padding: 5px;
+   
     background-color: lightgrey;
 }
 .product p,button{margin: auto; text-align: center;font-size: 20px;color: black;}
