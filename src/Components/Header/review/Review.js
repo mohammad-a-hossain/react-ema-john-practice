@@ -1,6 +1,5 @@
-
 import React, { useEffect, useState } from 'react'
-import fakeData from '../../../fakeData'
+//import fakeData from '../../../fakeData'
 import { getDatabaseCart, processOrder, removeFromDatabaseCart} from '../../../utilities/databaseManager'
 import Cart from '../../cart/Cart'
 import ReviewDetails from '../../reviewDetails/ReviewDetails'
@@ -16,29 +15,36 @@ import { useHistory } from 'react-router'
             history.push('/Shipment')
         }
         const removeProductItem=(product)=>{
-            // console.log('removed',product)
             const newCart =cart.filter(item => item.key !== product)
-          setCart(newCart)
+              setCart(newCart)
           removeFromDatabaseCart(product)
        }
     
     useEffect(()=>{
        //console.log('rebiew')
         const saveCart = getDatabaseCart();
-       //console.log(saveCart)
-       const getKeys =Object.keys(saveCart)
-       //console.log(getKeys)
+       const  productKeys =Object.keys(saveCart)
+      // const productKeys =Object.keys(saveCart)
      
-       const cartItems =getKeys.map(ke => {
+        fetch('http://localhost:4000/productsByKeys',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(productKeys)
+        })
+        .then(res =>res.json())
+        .then(data =>setCart(data))
+
+    },[])
+    /*     const cartItems =productKeys.map(ke => {
              const eachProduct = fakeData.find(prd => prd.key === ke)
                    eachProduct.quantity= saveCart[ke]
                return eachProduct        //console.log(eachProduct)
-       })
+       }) 
        //console.log(cartItems)
-       setCart(cartItems)
+       setCart(cartItems) */
       
       
-    },[])
+   
 
 
    const handleOrderPlace=()=>{
@@ -47,9 +53,9 @@ import { useHistory } from 'react-router'
        processOrder()
    }
   let thankYou 
-   if(orderPlace){
+  /*  if(orderPlace){
         thankYou= <img src={happyImage} alt=""/>
-   }
+   } */
     return (
         <div>
             <div>

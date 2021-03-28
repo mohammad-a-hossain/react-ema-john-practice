@@ -125,11 +125,11 @@ const gitHubSignIn=() =>{
 
      {
        
-       user.isSignIn && <div>
-       <h3>name: {user.name}</h3>
-           <h3>email: {user.email}</h3>
+       user.isSignIn && <>
+       <p>name: {user.name}</p>
+           <p>email: {user.email}</p>
            <img style={{width:"200px",height:'200px'}} src={user.photo}></img>
-           </div>
+           </>
      }
 
      <hr></hr>
