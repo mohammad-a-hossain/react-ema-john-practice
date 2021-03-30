@@ -9,7 +9,7 @@ const ProductDetail = () => {
     //const productItem =fakeData.find(pd => pd.key === productKey)
     //console.log(productItem)
     useEffect(() => {
-        fetch('http://localhost:4000/product/'+productKey)
+        fetch('https://secret-waters-26306.herokuapp.com/product/'+productKey)
         .then(res => res.json())
         .then(data =>serProduct(data))
     }, [productKey])

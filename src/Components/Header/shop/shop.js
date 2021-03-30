@@ -17,7 +17,7 @@ export const Shop = () => {
      //console.log(cart)
 
     useEffect(()=>{
-          fetch('http://localhost:4000/products')
+          fetch('products')
           .then(res =>res.json())
           .then(data => setProduct(data))
     },[])
@@ -35,7 +35,7 @@ export const Shop = () => {
             setCart(previousCart);
         }
      */
-        fetch('http://localhost:4000/productsByKeys',{
+        fetch('https://secret-waters-26306.herokuapp.com/productsByKeys',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(productKeys)
@@ -44,7 +44,8 @@ export const Shop = () => {
         .then(data =>setCart(data))
     }, [])
 
-/* --------------- */
+/* ---------------/////*******************----------
+----------------------- */ 
 const handleAddProduct = (product) =>{
     const toBeAddedKey = product.key;
     const sameProduct = cart.find(pd => pd.key === toBeAddedKey);
@@ -63,7 +64,7 @@ const handleAddProduct = (product) =>{
     setCart(newCart);
     addToDatabaseCart(product.key, count);
 }
-
+/* 
  
     const total= cart.reduce((total,pro)=>total + pro.price,0)
     const tax =Math.round(total /10);
@@ -78,7 +79,7 @@ const handleAddProduct = (product) =>{
     }else{
         shipping=0
     }
-    const grandTotal= Math.round(total+tax+shipping)
+    const grandTotal= Math.round(total+tax+shipping) */
     return (
         <div className='container'>
             <div className='shop-body'>
